@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoninScan | On-Chain Threat Intelligence</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+</head>
+<body>
+
+    <div id="particles-js"></div>
+
+    <div class="header">
+        <h1>RONINSCAN</h1>
+        <p>On-Chain Threat Intelligence Engine</p>
+    </div>
+
+    <div class="scan-panel">
+        <input id="address" placeholder="Enter Smart Contract Address">
+        
+        <div class="buttons">
+            <button class="scan-btn" onclick="analyze()">SCAN CONTRACT</button>
+            <button class="report-btn" onclick="downloadPDF()">GENERATE REPORT</button>
+        </div>
+    </div>
+
+    <div id="result" class="result" style="display: none;"></div>
+
+    <div class="footer">
+        <p>⚔ RoninScan Security Labs</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
